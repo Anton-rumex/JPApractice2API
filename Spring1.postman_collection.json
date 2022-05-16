@@ -1,0 +1,179 @@
+{
+	"info": {
+		"_postman_id": "d9b06fc6-8d79-4bab-8e85-8f703fb7ee7c",
+		"name": "Spring1",
+		"schema": "https://schema.getpostman.com/json/collection/v2.1.0/collection.json"
+	},
+	"item": [
+		{
+			"name": "http://localhost:8080/Menu",
+			"protocolProfileBehavior": {
+				"disableBodyPruning": true
+			},
+			"request": {
+				"method": "GET",
+				"header": [
+					{
+						"key": "Content",
+						"value": "application/json",
+						"type": "text"
+					}
+				],
+				"body": {
+					"mode": "raw",
+					"raw": "",
+					"options": {
+						"raw": {
+							"language": "json"
+						}
+					}
+				},
+				"url": {
+					"raw": "http://localhost:8085/Menu",
+					"protocol": "http",
+					"host": [
+						"localhost"
+					],
+					"port": "8085",
+					"path": [
+						"Menu"
+					]
+				}
+			},
+			"response": []
+		},
+		{
+			"name": "http://localhost:8080/Menu/java",
+			"protocolProfileBehavior": {
+				"disabledSystemHeaders": {
+					"content-type": true
+				}
+			},
+			"request": {
+				"method": "PUT",
+				"header": [
+					{
+						"key": "Content-Type",
+						"value": "application/json",
+						"type": "text"
+					}
+				],
+				"body": {
+					"mode": "raw",
+					"raw": " {\r\n        \"id\": \"c#\",\r\n        \"name\": \".net Framework\",\r\n        \"description\": \".net Framework Description\"\r\n    }",
+					"options": {
+						"raw": {
+							"language": "text"
+						}
+					}
+				},
+				"url": {
+					"raw": "http://localhost:8080/Menu/java",
+					"protocol": "http",
+					"host": [
+						"localhost"
+					],
+					"port": "8080",
+					"path": [
+						"Menu",
+						"java"
+					]
+				}
+			},
+			"response": []
+		},
+		{
+			"name": "http://localhost:8080/Menu/java",
+			"request": {
+				"method": "POST",
+				"header": [
+					{
+						"key": "Content",
+						"value": "application/json",
+						"type": "text",
+						"disabled": true
+					}
+				],
+				"body": {
+					"mode": "raw",
+					"raw": " {\r\n        \"id\": \"js\",\r\n        \"name\": \"Java\",\r\n        \"description\": \"Java Description\"\r\n    }   ",
+					"options": {
+						"raw": {
+							"language": "json"
+						}
+					}
+				},
+				"url": {
+					"raw": "http://localhost:8085/Menu",
+					"protocol": "http",
+					"host": [
+						"localhost"
+					],
+					"port": "8085",
+					"path": [
+						"Menu"
+					]
+				}
+			},
+			"response": []
+		},
+		{
+			"name": "http://localhost:8080/Menu/java",
+			"request": {
+				"method": "DELETE",
+				"header": [
+					{
+						"key": "Content-Type",
+						"value": "application/json",
+						"type": "text"
+					}
+				],
+				"body": {
+					"mode": "raw",
+					"raw": ""
+				},
+				"url": {
+					"raw": "http://localhost:8080/Menu/java",
+					"protocol": "http",
+					"host": [
+						"localhost"
+					],
+					"port": "8080",
+					"path": [
+						"Menu",
+						"java"
+					]
+				}
+			},
+			"response": []
+		},
+		{
+			"name": "http://localhost:8085/Menu/JAVA/Course/js1",
+			"request": {
+				"method": "GET",
+				"header": [
+					{
+						"key": "Content-Type",
+						"value": "application/json",
+						"type": "text"
+					}
+				],
+				"url": {
+					"raw": "http://localhost:8085/Menu/JAVA/Course/js1",
+					"protocol": "http",
+					"host": [
+						"localhost"
+					],
+					"port": "8085",
+					"path": [
+						"Menu",
+						"JAVA",
+						"Course",
+						"js1"
+					]
+				}
+			},
+			"response": []
+		}
+	]
+}
